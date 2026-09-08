@@ -5,11 +5,11 @@
 title: "Guia de Equipamentos Médicos"
 name: "Dr. José Ronaldo Spadeto"
 email: ""
-description: "Orientação clínica independente, parâmetros técnicos e critérios de segurança em equipamentos médicos domiciliares e home care."
+description: "Conteúdo educativo independente sobre parâmetros técnicos, ergonomia e critérios de segurança em equipamentos médicos domiciliares."
 url: "https://josespadeto.github.io"
 baseurl: "/guia-equipamentos-medicos"
 
-# Identidade visual (skin limpa)
+# Identidade visual
 minimal_mistakes_skin: "default"
 search: true
 
@@ -35,11 +35,11 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# Barra Lateral do Especialista (E-E-A-T)
+# Barra Lateral do Especialista (E-E-A-T em estrita conformidade ética)
 author:
   name   : "Dr. José Ronaldo Spadeto"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Médico Perito. Análise técnica, engenharia clínica e parâmetros de segurança para cuidados domiciliares."
+  bio    : "Médico. Conteúdo educativo, parâmetros técnicos e critérios de segurança em tecnologias para o cuidado domiciliar."
   location: "Brasil"
   links:
     - label: "GitHub"
