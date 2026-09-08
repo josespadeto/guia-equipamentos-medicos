@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente de Fundo Azul Médico Pericial -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+
+    <!-- Gradiente Metálico para o Monograma -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Gradiente Ciano para Elementos Clínicos -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Sombra Suave -->
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Circular Base -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="#334155" stroke-width="4" />
+
+  <!-- Anel de Precisão Técnico/Pericial -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.75" />
+
+  <!-- Cruz Médica Minimalista Superior -->
+  <g transform="translate(200, 75)" filter="url(#subtleGlow)">
+    <rect x="-4" y="-14" width="8" height="28" rx="3" fill="url(#accentGrad)" />
+    <rect x="-14" y="-4" width="28" height="8" rx="3" fill="url(#accentGrad)" />
+  </g>
+
+  <!-- Monograma JRS Tipográfico Central -->
+  <text 
+    x="200" 
+    y="225" 
+    text-anchor="middle" 
+    fill="url(#silverGrad)" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+    font-size="82" 
+    font-weight="800" 
+    letter-spacing="5"
+    filter="url(#subtleGlow)">
+    JRS
+  </text>
+
+  <!-- Subtítulo de Autoridade Técnica -->
+  <text 
+    x="200" 
+    y="262" 
+    text-anchor="middle" 
+    fill="#94a3b8" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+    font-size="14" 
+    font-weight="600" 
+    letter-spacing="6">
+    MEDICINA PERICIAL
+  </text>
+
+  <!-- Linha Decorativa Inferior -->
+  <line x1="140" y1="285" x2="260" y2="285" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+</svg>
