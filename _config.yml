@@ -38,7 +38,7 @@ plugins:
 # Barra Lateral do Especialista (E-E-A-T em estrita conformidade técnica e ética)
 author:
   name   : "Dr. José Ronaldo Spadeto"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/logo-jrs.svg"
   bio    : "Médico Perito. Avaliação técnica, conformidade de parâmetros e segurança no uso de equipamentos domiciliares."
   location: "Brasil"
   links:
