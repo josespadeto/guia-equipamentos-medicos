@@ -1,9 +1,10 @@
+# main links
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
+  - title: "Início"
+    url: /
+  - title: "Sobre o Especialista"
     url: /about/
+  - title: "Termos de Uso"
+    url: /termos/
+  - title: "Privacidade"
+    url: /privacidade/
