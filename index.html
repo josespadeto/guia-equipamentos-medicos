@@ -1,7 +1,53 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: default
+title: "Início"
 ---
+
+<div class="mainheading">
+    <h1 class="sitetitle">{{ site.title }}</h1>
+    <p class="lead">
+        {{ site.description }}
+    </p>
+</div>
+
+<!-- Seção de Artigos Recentes -->
+<section class="recent-posts">
+    <div class="section-title">
+        <h2><span>Artigos Publicados</span></h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in site.posts %}
+        <div class="col-lg-4 col-md-6 mb-30px card-group">
+            <div class="card h-100">
+                <div class="maxthumb">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {% if post.image %}
+                        <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+                        {% else %}
+                        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/logo-jrs.svg" alt="{{ post.title }}">
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </h2>
+                    <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords: 22 }}</h4>
+                </div>
+                <div class="card-footer b-0 bg-white mt-auto">
+                    <div class="wrapfooter">
+                        <span class="meta-footer-thumb">
+                            <img class="author-thumb" src="{{ site.baseurl }}/assets/images/logo-jrs.svg" alt="{{ site.author.name }}">
+                        </span>
+                        <span class="author-meta">
+                            <span class="post-name">{{ site.author.name }}</span><br/>
+                            <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                        </span>
+                        <span class="post-read-more"><a href="{{ site.baseurl }}{{ post.url }}" title="Ler Artigo"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
