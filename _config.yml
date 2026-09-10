@@ -1,86 +1,76 @@
-# Welcome to Jekyll!
-# Configurações do Portal de Equipamentos Médicos & Tecnologia Assistiva
+# Configuração do Site - Guia de Equipamentos Médicos
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "mint"
 
-# Site settings
+# Informações Gerais
 title: "Guia de Equipamentos Médicos"
+title_separator: "|"
+subtitle: "Avaliação técnica, segurança e parâmetros clínicos em saúde domiciliar"
 name: "Dr. José Ronaldo Spadeto"
-email: ""
-description: "Avaliação pericial independente, conformidade de parâmetros técnicos e critérios de segurança em equipamentos para cuidados domiciliares."
+description: "Portal pericial e informativo sobre suporte ventilatório, oxigenoterapia e tecnologia médica domiciliar."
 url: "https://josespadeto.github.io"
 baseurl: "/guia-equipamentos-medicos"
 
-# Identidade visual
-minimal_mistakes_skin: "default"
-search: true
-
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
-timezone: "America/Sao_Paulo"
-
-include:
-  - _pages
-
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
-# Barra Lateral do Especialista (E-E-A-T em estrita conformidade técnica e ética)
+# Autor e Perfil Lateral
 author:
-  name   : "Dr. José Ronaldo Spadeto"
-  avatar : "/assets/images/logo-jrs.svg"
-  bio    : "Médico Perito. Avaliação técnica, conformidade de parâmetros e segurança no uso de equipamentos domiciliares."
+  name: "Dr. José Ronaldo Spadeto"
+  avatar: "/assets/images/logo-jrs.svg"
+  bio: "Médico Perito. Avaliação técnica, conformidade de parâmetros e segurança no uso de equipamentos domiciliares."
   location: "Brasil"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/josespadeto"
 
-# Rodapé Institucional
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/josespadeto"
+# Configurações de Construção do Jekyll
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
 
-# Configurações padrão de layout
+# Plugins Suportados pelo GitHub Pages
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Padrões de Layout
 defaults:
-  # _posts
+  # Posts do Blog
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       read_time: true
       comments: false
       share: true
       related: true
-      toc: true
-      toc_label: "Neste Artigo"
-      toc_icon: "stethoscope"
-      toc_sticky: true
-  # _pages
+  # Páginas Institucionais
   - scope:
       path: "_pages"
-      type: pages
+      type: "pages"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Configurações de Leitura e Sumário
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..3
+
+# Navegação e Rodapé
+include: ["_pages"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
