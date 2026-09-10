@@ -1,0 +1,20 @@
+/* Limitar proporção máxima do logotipo e avatar */
+.author-thumb, .img-fluid, .site-logo img, .navbar-brand img {
+    max-height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Limitar imagem dos cards da página inicial */
+.maxthumb img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #f8fafc;
+    padding: 10px;
+}
+
+/* Remover caixa cinza de newsletter quebrada */
+.alertbar {
+    display: none !important;
+}
