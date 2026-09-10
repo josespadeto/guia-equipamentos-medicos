@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "CPAP Fixo ou Automático (APAP): O Que Dizem as Evidências sobre Adaptação e Eficácia"
 excerpt: "Uma comparação prática e fundamentada entre pressão contínua e autoajustável, o papel do alívio expiratório e critérios de escolha para o tratamento da apneia."
 date: 2026-09-08
