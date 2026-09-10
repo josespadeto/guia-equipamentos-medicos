@@ -14,9 +14,22 @@ url: "https://josespadeto.github.io"
 author:
   name: "Dr. José Ronaldo Spadeto"
   avatar: "assets/images/logo-jrs.svg"
-  bio: "Médico Perito. Especialista em avaliação técnica, conformidade de parâmetros e segurança no uso de equipamentos de saúde domiciliar."
-  email: "contato@josespadeto.com.br"
-  crm: "Registro Profissional Médico Ativo"
+  bio: "Médico. Avaliação técnica, conformidade de parâmetros e segurança no uso de equipamentos de saúde domiciliar."
+
+# Desativar barras promocionais e pop-ups do tema original
+alertbar: false
+mailchimp-list: false
+
+# Navegação Superior Limpa
+navigation:
+  - title: "Início"
+    url: "/"
+  - title: "Sobre o Especialista"
+    url: "/sobre/"
+  - title: "Termos de Uso"
+    url: "/termos-de-uso/"
+  - title: "Privacidade"
+    url: "/privacidade/"
 
 # Paginação e Formato de Posts
 paginate: 6
@@ -36,9 +49,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# Opções de Exibição do Mediumish
-disqus: ""
-mailchimp-list: ""
+disqus: false
 share: false
 
 include: ["_pages"]
