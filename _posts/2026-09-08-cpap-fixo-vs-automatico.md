@@ -13,6 +13,10 @@ tags:
   - Suporte Ventilatório
 ---
 
+<p class="text-center my-4">
+  <img class="img-fluid rounded shadow-sm" src="{{ site.baseurl }}/assets/images/cpap-airsense10.jpg" alt="Gerador de fluxo CPAP e APAP ResMed AirSense 10 instalado ao lado do leito">
+</p>
+
 <div class="alert alert-light border p-3 my-4 d-flex align-items-center rounded bg-light">
   <div class="mr-3">
     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
